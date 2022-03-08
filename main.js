@@ -48,7 +48,7 @@ d.onclick = () => {
     var tuPass = 'tu260302';
 
     var nhanName = 'Thanh Nhan';
-    var nhanPass = 'nhan30112002';
+    var nhanPass = 'nhan301102';
     
     if(hangName===a.value && hangPass===b.value) {
         c.innerHTML = 
@@ -166,7 +166,7 @@ d.onclick = () => {
         <div class="content">
             <h1>HAPPY WOMEN DAY</h1>
             <p>Phụ nữ giống như những thiên thần mang lại hạnh phúc cho thế giới này vậy. Nếu không có họ thế giới có thể sẽ không có như ngày hôm nay. Và nhân ngày 8/3 mình chúc bạn Nhàn vui vẻ, luôn nở một nụ cười ở trên môi, xinh đẹp và chúc bạn thành công trong cuộc sống nha &#60 3 :v</p>
-            <img src="./img/loanTrang.jpg" style="width: 350px; height: 350px;">
+            <img src="./img/nhan.jpg">
         </div>
         `
     }
