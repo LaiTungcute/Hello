@@ -51,6 +51,7 @@ d.onclick = () => {
     var nhanPass = 'nhan301102';
     
     if(hangName===a.value && hangPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
         <div class="content">
@@ -61,6 +62,7 @@ d.onclick = () => {
         `
     }
     else if(trinhName===a.value && trinhPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
         <div class="content">
@@ -71,6 +73,7 @@ d.onclick = () => {
         `
     }
     else if(traName===a.value && traPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
         <div class="content">
@@ -81,7 +84,8 @@ d.onclick = () => {
         `
     }
    else if(maiName===a.value && maiPass===b.value) {
-        c.innerHTML = 
+    toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});    
+    c.innerHTML = 
         ` 
         <div class="content">
             <h1>HAPPY WOMEN DAY</h1>
@@ -91,6 +95,7 @@ d.onclick = () => {
         `
     }
     else if(cduongName===a.value && cduongPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
         <div class="content">
@@ -101,6 +106,7 @@ d.onclick = () => {
         `
     }
     else if(rungName===a.value && rungPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
         <div class="content">
@@ -111,6 +117,7 @@ d.onclick = () => {
         `
     }
     else if(duongName===a.value && duongPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
         <div class="content">
@@ -121,6 +128,7 @@ d.onclick = () => {
         `
     }
     else if(thuyName===a.value && thuyPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
         <div class="content">
@@ -131,6 +139,7 @@ d.onclick = () => {
         `
     }
     else if(cPAname===a.value && cPAPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
         <div class="content">
@@ -141,6 +150,7 @@ d.onclick = () => {
         `
     }
     else if(lanName===a.value && lanPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
         <div class="content">
@@ -151,6 +161,7 @@ d.onclick = () => {
         `
     }
     else if(loanName===a.value && loanPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
         <div class="content">
@@ -161,6 +172,7 @@ d.onclick = () => {
         `
     }
     else if(nhanName===a.value && nhanPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
         <div class="content">
@@ -171,6 +183,7 @@ d.onclick = () => {
         `
     }
     else if(trangName===a.value && trangPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
         <div class="content">
@@ -181,6 +194,7 @@ d.onclick = () => {
         `
     }
     else if(cNhungName===a.value && cNhungPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
         <div class="content">
@@ -192,6 +206,7 @@ d.onclick = () => {
         `
     }
     else if(tuName===a.value && tuPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
         <div class="content">
@@ -203,6 +218,48 @@ d.onclick = () => {
         `
     }
     else {
-        e.innerHTML = '<h2 style="color: red; text-align: center; margin-top: 20px">Nhập sai</h2>'
+        toast({
+            title: 'error',
+            content: 'Bạn đã nhập sai. Vui lòng nhập lại',
+            icon: 'fas fa-exclamation-triangle',
+            duration: 3000
+        });
+    }
+
+    function toast({
+        title = '',
+        content = '',
+        icon = '',
+        duration = 3000
+    }) {
+        if(e) {
+            const toast = document.createElement('div');
+            const auto = setTimeout(()=> {
+            e.removeChild(toast);
+        }, duration+1000);
+        
+        const delay = (duration/1000).toFixed(2);
+        toast.style.animation = `slideInLeft ease .5s, faceOut linear 1s ${delay}s forwards`;
+        toast.classList.add('toast', `toast--${title}`);
+        toast.onclick = (s)=> {
+            if(s.target.closest('.close')) {
+                e.removeChild(toast);
+            }
+            clearTimeout(auto)
+        }
+        toast.innerHTML = `
+            <div class="icon">
+                <i class="${icon}"></i>
+            </div>
+            <div class="body">
+                <h3 class="title">${title}</h3>
+                <p class="toast__content">${content}</p>
+            </div>
+            <div class="close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>`
+        e.appendChild(toast); 
+        }
     }
 }

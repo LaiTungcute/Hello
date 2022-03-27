@@ -4,6 +4,14 @@
     box-sizing: border-box;   
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue";
+    background-color: #f4f4f5;
+}
+
 .team {
     margin-left: 694px;
     margin-top: 231px;
@@ -52,11 +60,11 @@ img {
     margin-left: -240px;
 }
 
-h1 {
+.content h1 {
     padding-top: 50px;
 }
 
-p {
+.content p {
     margin: 20px 20px 0 20px;
     font-size: 22px;
 }
@@ -76,7 +84,81 @@ p {
         margin-left: 10px;
     }
 
-    h1 {
+    .content h1 {
         padding-top: 30px;
     }
+}
+
+.box {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 10px 0;
+    max-width: 450px;
+    min-width: 400px;
+    border-left: 4px solid;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.1);
+    transition: all linear .3s;
+}
+
+.toast--success {
+    border-color: #71be34;
+}
+
+.toast--success .icon {
+    color: #71be34;
+}
+
+.toast--error {
+    border-color: #eb4e2b;
+}
+
+.toast--error .icon {
+    color: #eb4e2b;
+}
+
+.toast + .toast {
+    margin: 10px 0;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes faceOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.toast .icon {
+    padding: 0 16px;
+    font-size: 20px;
+}
+
+.toast .body {
+    flex-grow: 1;
+}
+
+.toast .close {
+   padding: 0 16px;
+   cursor: pointer;
+}
+
+.toast .close:hover{
+    color: #eb4e2b;
 }
