@@ -52,6 +52,9 @@ d.onclick = () => {
 
     var haName = 'Thu Ha';
     var haPass = 'hak16';
+
+    var lieuName = 'Hong Lieu';
+    var lieuPass = 'lieuk16';
     
     if(hangName===a.value && hangPass===b.value) {
         toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
@@ -221,6 +224,17 @@ d.onclick = () => {
         `
     }
     else if(haName===a.value && haPass===b.value) {
+        toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
+        c.innerHTML = 
+        ` 
+        <div class="content">
+            <h1>HAPPY WOMEN DAY</h1>
+            <p>Phụ nữ giống như những thiên thần mang lại hạnh phúc cho thế giới này vậy. Nếu không có họ thế giới có thể sẽ không có như ngày hôm nay. Và nhân ngày 20/10 mình chúc bạn Hà ngày càng xinh đẹp, giỏi giang, luôn luôn nở một nụ cười trên môi và thành công trong cuộc sống &#60 3. Happy women's day</p>
+            <img src="./img/Ha.jpg" style="width: 370px; height: 370px;">   
+        </div>
+        `
+    }
+    else if(lieuName===a.value && lieuPass===b.value) {
         toast({title: 'success',content: 'Chúc mừng bạn đã đăng nhập thành công',icon: 'fas fa-check-circle', duration: 3000});
         c.innerHTML = 
         ` 
